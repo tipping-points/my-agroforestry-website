@@ -14,12 +14,15 @@ body {
     padding: 20px;
 }
 
+header, .section, footer {
+    padding: 60px 0;
+}
+
 .hero-section {
     background: url('images/A_beautiful_agroforestry_system.webp') no-repeat center center/cover;
     color: #fff;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -31,9 +34,10 @@ body {
     align-items: center;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
     width: 100%;
-    position: absolute;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar .logo {
@@ -95,33 +99,19 @@ body {
 }
 
 .section {
-    padding: 60px 0;
     text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .section.bg-light {
     background-color: #3CB371;
 }
 
-.section-title {
-    margin-bottom: 40px;
-}
-
-.section-title h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.section-title p {
-    font-size: 18px;
-    color: #fff;
-}
-
-.mission,
-.services,
-.investors,
-.alliances,
-.contact-form {
+.content {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -129,68 +119,42 @@ body {
     align-items: center;
 }
 
-.mission img,
-.services img,
-.investors img {
+.content img {
     max-width: 100%;
     border-radius: 10px;
+    flex: 1 1 300px;
 }
 
-.mission div,
-.service,
-.investor-info,
-.alliance {
-    flex: 1;
-    max-width: 600px;
+.content .text {
+    flex: 1 1 300px;
     text-align: left;
 }
 
-.mission div h3,
-.service h3,
-.investor-info h3,
-.alliance h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.service p,
-.investor-info ul {
-    font-size: 16px;
-}
-
-.investor-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.investor-info ul li {
-    margin-bottom: 10px;
-}
-
-.contact-section {
-    background-color: #222;
-    color: #fff;
-}
-
-.contact-form form {
-    flex: 1;
+.contact-section .content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
-.contact-form form label {
+.contact-section form {
+    width: 100%;
+}
+
+.contact-section form label {
+    display: block;
     margin-top: 10px;
 }
 
-.contact-form form input,
-.contact-form form textarea {
+.contact-section form input,
+.contact-section form textarea {
+    width: 100%;
     padding: 10px;
     margin-top: 5px;
     border: none;
     border-radius: 5px;
 }
 
-.contact-form form button {
+.contact-section form button {
     padding: 10px 20px;
     margin-top: 20px;
     background-color: #28a745;
@@ -200,8 +164,12 @@ body {
     cursor: pointer;
 }
 
-.contact-form form button:hover {
+.contact-section form button:hover {
     background-color: #218838;
+}
+
+.contact-info {
+    margin-top: 20px;
 }
 
 .contact-info p {
@@ -213,9 +181,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 20px;
 }
 
 footer p {
     margin: 0;
 }
+

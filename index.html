@@ -10,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Inicio -->
-    <header id="inicio" class="hero-section">
+    <header>
         <div class="container">
             <nav class="navbar">
                 <div class="logo">Agroforestal Catalunya</div>
@@ -27,6 +26,11 @@
                     <a href="#log-in" class="btn">Log In</a>
                 </div>
             </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
             <div class="hero-content">
                 <h1>Transformando el Futuro con Sistemas Agroforestales</h1>
                 <p>Capturamos carbono, generamos valor</p>
@@ -34,33 +38,24 @@
                 <a href="#comenzar" class="cta">Comenzar un sistema agroforestal</a>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Sobre Nosotros -->
     <section id="sobre-nosotros" class="section">
         <div class="container">
-            <div class="section-title">
-                <h2>Quiénes Somos</h2>
-                <p>Somos una empresa dedicada a la implementación y gestión de sistemas agroforestales en Cataluña. En colaboración con el Instituto de Investigación y Tecnología Agroalimentarias (IRTA), lideramos proyectos innovadores que mejoran la eficiencia en la captura de carbono, contribuyendo a la mitigación del cambio climático.</p>
-            </div>
-            <div class="mission">
+            <h2>Quiénes Somos</h2>
+            <div class="content">
                 <img src="images/A_team_of_professionals.webp" alt="Profesionales colaborando">
-                <div>
-                    <h3>Nuestra Misión</h3>
-                    <p>Crear sistemas agroforestales sostenibles que secuestren carbono, generando beneficios ecológicos y económicos.</p>
+                <div class="text">
+                    <p>Somos una empresa dedicada a la implementación y gestión de sistemas agroforestales en Cataluña. En colaboración con el Instituto de Investigación y Tecnología Agroalimentarias (IRTA), lideramos proyectos innovadores que mejoran la eficiencia en la captura de carbono, contribuyendo a la mitigación del cambio climático.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Nuestros Servicios -->
     <section id="servicios" class="section bg-light">
         <div class="container">
-            <div class="section-title">
-                <h2>Soluciones Agroforestales Innovadoras</h2>
-                <p>Transformamos terrenos en sumideros de carbono</p>
-            </div>
-            <div class="services">
+            <h2>Soluciones Agroforestales Innovadoras</h2>
+            <div class="content">
                 <div class="service">
                     <img src="images/Various_stages_of_agroforestry_systems.webp" alt="Etapas de sistemas agroforestales">
                     <h3>Implementación de Sistemas Agroforestales</h3>
@@ -80,15 +75,11 @@
         </div>
     </section>
 
-    <!-- Inversores -->
     <section id="inversores" class="section">
         <div class="container">
-            <div class="section-title">
-                <h2>Oportunidades para Inversores</h2>
-                <p>Invierte en un Futuro Sostenible</p>
-            </div>
-            <div class="investors">
-                <div class="investor-info">
+            <h2>Oportunidades para Inversores</h2>
+            <div class="content">
+                <div class="text">
                     <h3>Beneficios para Inversionistas:</h3>
                     <ul>
                         <li>Rentabilidad del 5% anual.</li>
@@ -101,14 +92,10 @@
         </div>
     </section>
 
-    <!-- Alianzas -->
     <section id="alianzas" class="section bg-light">
         <div class="container">
-            <div class="section-title">
-                <h2>Nuestras Alianzas Estratégicas</h2>
-                <p>Colaboraciones para un Impacto Mayor</p>
-            </div>
-            <div class="alliances">
+            <h2>Nuestras Alianzas Estratégicas</h2>
+            <div class="content">
                 <div class="alliance">
                     <h3>Con Instituciones Financieras</h3>
                     <p>Facilitar inversiones en bonos de carbono y ofrecer productos de inversión sostenibles a los clientes.</p>
@@ -125,25 +112,17 @@
         </div>
     </section>
 
-    <!-- Noticias y Actualizaciones -->
     <section id="noticias" class="section">
         <div class="container">
-            <div class="section-title">
-                <h2>Últimas Noticias</h2>
-                <p>Mantente Informado sobre Nuestros Proyectos y Avances</p>
-            </div>
+            <h2>Últimas Noticias</h2>
             <img src="images/Dynamic_feed_of_news.webp" alt="Noticias y actualizaciones">
         </div>
     </section>
 
-    <!-- Contacto -->
     <section id="contacto" class="section contact-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Contáctanos</h2>
-                <p>Estamos Aquí para Ayudarte</p>
-            </div>
-            <div class="contact-form">
+            <h2>Contáctanos</h2>
+            <div class="content">
                 <form action="submit_form.php" method="post">
                     <label for="name">Nombre</label>
                     <input type="text" id="name" name="name" required>
@@ -169,3 +148,4 @@
     </footer>
 </body>
 </html>
+
