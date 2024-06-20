@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -11,8 +11,68 @@ body {
     margin: auto;
     overflow: hidden;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hero-section {
+    background: url('images/A_beautiful_agroforestry_system.webp') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-content .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .section {
@@ -20,50 +80,98 @@ body {
     text-align: center;
 }
 
-h1, h2, h3 {
-    color: #333;
+.section.bg-light {
+    background-color: #f9f9f9;
 }
 
-p {
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 18px;
     color: #666;
 }
 
-.cta {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    background-color: #28a745;
-    color: #fff;
-    border-radius: 5px;
+.mission,
+.services,
+.investors,
+.alliances,
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-ul {
-    list-style-type: none;
+.mission img,
+.services img,
+.investors img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.mission div,
+.service,
+.investor-info,
+.alliance {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.mission div h3,
+.service h3,
+.investor-info h3,
+.alliance h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.service p,
+.investor-info ul {
+    font-size: 16px;
+}
+
+.investor-info ul {
+    list-style: none;
     padding: 0;
 }
 
-ul li {
-    margin: 10px 0;
+.investor-info ul li {
+    margin-bottom: 10px;
 }
 
-form {
+.contact-section {
+    background-color: #222;
+    color: #fff;
+}
+
+.contact-form form {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-form label {
+.contact-form form label {
     margin-top: 10px;
 }
 
-form input, form textarea {
+.contact-form form input,
+.contact-form form textarea {
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
 }
 
-form button {
+.contact-form form button {
     padding: 10px 20px;
     margin-top: 20px;
     background-color: #28a745;
@@ -73,10 +181,22 @@ form button {
     cursor: pointer;
 }
 
-form button:hover {
+.contact-form form button:hover {
     background-color: #218838;
 }
 
 .contact-info p {
     margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
 }
